@@ -2,23 +2,33 @@
 .padding-global {
   padding-inline: toRem(40);
   @media only screen and (max-width: $screen-xs) {
-    font-size: toRem(20);
+    padding-inline: toRem(20);
   }
 }
 
 .padding-section-small {
-  padding-top: toRem(48);
-  padding-bottom: toRem(48);
+  padding-top: toRem(12);
+  padding-bottom: toRem(12);
+}
+
+.padding-section-xsmall {
+  padding-top: toRem(16);
+  padding-bottom: toRem(16);
 }
 
 .padding-section-medium {
-  padding-top: toRem(80);
-  padding-bottom: toRem(80);
+  padding-top: toRem(28);
+  padding-bottom: toRem(28);
 }
 
 .padding-section-large {
-  padding-top: toRem(96);
-  padding-bottom: toRem(96);
+  padding-top: toRem(40);
+  padding-bottom: toRem(40);
+}
+
+.padding-section-xlarge {
+  padding-top: toRem(76);
+  padding-bottom: toRem(76);
 }
 // END:: Paddings
 
