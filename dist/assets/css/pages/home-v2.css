@@ -115,8 +115,8 @@
 }
 @font-face {
   font-family: "SF Pro";
-  src: url("../../media/fonts/SFPRODISPLAYLIGHTITALIC.eot");
-  src: url("../../media/fonts/SFPRODISPLAYLIGHTITALIC.eot?#iefix") format("embedded-opentype"), url("../../media/fonts/SFPRODISPLAYLIGHTITALIC.woff") format("woff"), url("../../media/fonts/SFPRODISPLAYLIGHTITALIC.ttf") format("truetype"), url("../../media/fonts/SFPRODISPLAYLIGHTITALIC.svg?#webfont") format("svg");
+  src: url("../../media/fonts/SFPRODISPLAYLIGHT.eot");
+  src: url("../../media/fonts/SFPRODISPLAYLIGHT.eot?#iefix") format("embedded-opentype"), url("../../media/fonts/SFPRODISPLAYLIGHT.woff") format("woff"), url("../../media/fonts/SFPRODISPLAYLIGHT.ttf") format("truetype"), url("../../media/fonts/SFPRODISPLAYLIGHT.svg?#webfont") format("svg");
   font-weight: 300;
   font-style: normal;
 }

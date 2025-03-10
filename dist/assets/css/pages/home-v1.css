@@ -115,8 +115,8 @@
 }
 @font-face {
   font-family: "SF Pro";
-  src: url("../../media/fonts/SFPRODISPLAYLIGHTITALIC.eot");
-  src: url("../../media/fonts/SFPRODISPLAYLIGHTITALIC.eot?#iefix") format("embedded-opentype"), url("../../media/fonts/SFPRODISPLAYLIGHTITALIC.woff") format("woff"), url("../../media/fonts/SFPRODISPLAYLIGHTITALIC.ttf") format("truetype"), url("../../media/fonts/SFPRODISPLAYLIGHTITALIC.svg?#webfont") format("svg");
+  src: url("../../media/fonts/SFPRODISPLAYLIGHT.eot");
+  src: url("../../media/fonts/SFPRODISPLAYLIGHT.eot?#iefix") format("embedded-opentype"), url("../../media/fonts/SFPRODISPLAYLIGHT.woff") format("woff"), url("../../media/fonts/SFPRODISPLAYLIGHT.ttf") format("truetype"), url("../../media/fonts/SFPRODISPLAYLIGHT.svg?#webfont") format("svg");
   font-weight: 300;
   font-style: normal;
 }
@@ -303,13 +303,14 @@ h6,
   background-image: url("../../media/images/daisies 1.png");
   background-color: #D9DED2;
   background-size: 690px;
-  background-position: bottom;
+  background-position: center;
   background-repeat: no-repeat;
   padding-top: 48px;
+  position: relative;
 }
 .hero__text {
   padding: 0 80px;
-  width: 100%;
+  width: 75%;
 }
 .hero__text--title {
   color: #465039;
@@ -341,6 +342,149 @@ h6,
   border: none;
   text-transform: uppercase;
   border-radius: calc(infinity * 1px);
+}
+.hero__image {
+  background-color: white;
+  position: absolute;
+  width: 264px;
+  padding: 12px 12px 16px 12px;
+  top: 15%;
+  right: 10%;
+  transform: rotate(1deg);
+}
+.hero__image--img {
+  transform: rotate(-1deg);
+  width: 100%;
+  height: 280px;
+}
+.hero__image p {
+  font-size: 18px;
+}
+.hero__image span {
+  font-size: 14px;
+}
+.hero__image--icon {
+  width: 96px;
+  height: 96px;
+  padding: 10px;
+  background-color: #5E6653;
+  border-radius: 50%;
+  position: absolute;
+  top: -2rem;
+  right: -1rem;
+}
+
+.quality {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #E2E7DB;
+  width: 100%;
+  height: 144px;
+  padding: 40px 80px;
+}
+.quality__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.quality__item img {
+  width: 64px;
+  height: 64px;
+  padding: 10px;
+  background-color: #5E6653;
+  border-radius: 50%;
+}
+.quality__item--text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.quality__item--text h6 {
+  font-size: 24px;
+  font-weight: 300;
+  font-family: "Ivy Mode";
+  color: #5E6653;
+  text-transform: capitalize;
+}
+.quality__item--text p {
+  font-size: 18px;
+  font-family: "SF Pro";
+  color: #5E6653;
+}
+
+.introduction {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 76px 80px;
+  background-color: #F3F6F0;
+  gap: 64px;
+}
+.introduction__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 732px;
+  gap: 36px;
+}
+.introduction__text--title {
+  color: #465039;
+  font-size: 64px;
+  text-transform: uppercase;
+  font-family: "Ivy Mode";
+  font-weight: 300;
+}
+.introduction__text--paragraph {
+  font-family: "SF Pro";
+  color: #5E6653;
+  font-weight: 300;
+  font-size: 18px;
+}
+.introduction__text--cta {
+  width: 209px;
+  height: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 209px;
+  height: 46px;
+  padding: 12px 24px;
+  background-color: #5E6653;
+  color: #F3F6F0;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "SF Pro";
+  border: none;
+  text-transform: uppercase;
+  border-radius: calc(infinity * 1px);
+}
+.introduction__img {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 16px;
+  justify-content: start;
+  align-items: center;
+}
+.introduction__img__img-11, .introduction__img__img-13 {
+  width: 100%;
+  max-width: 247px;
+  height: 100%;
+  max-height: 248px;
+  padding: 10px;
+  border: 6px solid var(--color--base-white);
+  background-color: white;
+}
+.introduction__img__img-12, .introduction__img__img-14 {
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+  border: 6px solid var(--color--base-white);
 }
 
 /*# sourceMappingURL=home-v1.css.map*/
