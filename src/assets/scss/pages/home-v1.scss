@@ -11,13 +11,15 @@
     background-image: url('../../../assets/media/images/daisies\ 1.png');
     background-color: $color-primary-20;
     background-size: 690px;
-    background-position: bottom;
+    background-position: center;
     background-repeat: no-repeat;
     padding-top: 48px;
+    position: relative;
 
     &__text {
         padding: 0 80px;
-        width: 100%;
+        width: 75%;
+
         &--title {
             color: $color-primary-100;
             margin-bottom: 12px;
@@ -52,4 +54,168 @@
             border-radius: $rounded-full;
         }
     }
+
+    &__image {
+        background-color: $white;
+        position: absolute;
+        width: 264px;
+        padding: 12px 12px 16px 12px;
+        top: 15%;
+        right: 10%;
+        transform: rotate(1deg);
+
+        &--img {
+            transform: rotate(-1deg);
+            width: 100%;
+            height: 280px;
+        }
+
+        p {
+            font-size: $font-size-medium;
+        }
+
+        span {
+            font-size: $font-size-small;
+        }
+
+        &--icon {
+            width: 96px;
+            height: 96px;
+            padding: 10px;
+            background-color: $color-primary-80;
+            border-radius: 50%;
+            position: absolute;
+            top: -2rem;
+            right: -1rem;
+            //transform: rotate(-15deg);
+        }
+    }
 }
+
+.quality {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $color-primary-10;
+    width: 100%;
+    height: 144px;
+    padding: 40px 80px;
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+        img {
+            width: 64px;
+            height: 64px;
+            padding: 10px;
+            background-color: $color-primary-80;
+            border-radius: 50%;
+        }
+
+        &--text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+
+            h6 {
+                font-size: $font-size-h6;
+                font-weight: $font-weight-light;
+                font-family: $font-ivyMode;
+                color: $color-primary-80;
+                text-transform: capitalize;
+            }
+
+            p {
+                font-size: $font-size-medium;
+                font-family: $font-sfPro;
+                color: $color-primary-80;
+            }
+        }
+    }
+}
+
+.introduction {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 76px 80px;
+    background-color: $color-primary-0;
+    gap: 64px;
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        width: 732px;
+        gap: 36px;
+
+        &--title {
+            color: $color-primary-100;
+            font-size: $font-size-h2;
+            text-transform: uppercase;
+            font-family: $font-ivyMode;
+            font-weight: $font-weight-light;
+        }
+
+        &--paragraph {
+            font-family: $font-sfPro;
+            color: $color-primary-80;
+            font-weight: $font-weight-light;
+            font-size: $font-size-medium;
+        }
+
+        &--cta {
+            width: 209px;
+            height: 46px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            width: 209px;
+            height: 46px;
+            padding: 12px 24px;
+            background-color: $color-primary-80;
+            color: $color-primary-0;
+            font-size: $font-size-xsmall;
+            font-weight: $font-weight-regular;
+            font-family: $font-sfPro;
+            border: none;
+            text-transform: uppercase;
+            border-radius: $rounded-full;
+        }
+    }
+
+    &__img {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        gap: 16px;
+        justify-content: start;
+        align-items: center;
+
+        &__img-11,
+        &__img-13 {
+            width: 100%;
+            max-width: 247px;
+            height: 100%;
+            max-height: 248px;
+            padding: 10px;
+            border: 6px solid var(--color--base-white);
+            background-color: $white;
+        }
+
+        &__img-12,
+        &__img-14 {
+            width: 100%;
+            height: auto;
+            max-width: 200px;
+            border: 6px solid var(--color--base-white);
+        }
+    }
+}
+
