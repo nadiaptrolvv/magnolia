@@ -6,6 +6,7 @@
     src: url("../../media/fonts/#{$file-name}.eot");
     src: url("../../media/fonts/#{$file-name}.eot?#iefix") format("embedded-opentype"),
     url("../../media/fonts/#{$file-name}.woff") format("woff"),
+    url("../../media/fonts/#{$file-name}.otf") format("opentype"),
     url("../../media/fonts/#{$file-name}.ttf") format("truetype"),
     url("../../media/fonts/#{$file-name}.svg?#webfont") format("svg");
     font-weight: $font-weight;
@@ -37,4 +38,12 @@
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: $line;
+}
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == tablet {
+    @media (max-width: #{$screen-s}) {
+      @content;
+    }
+  }
 }

@@ -21,6 +21,10 @@
         gap: 36px;
         text-transform: uppercase;
         color: $color-primary-100;
+
+        @include respond(tablet) {
+            display: none;   
+        }
     }
 
     &__cta {
@@ -33,20 +37,19 @@
        text-transform: uppercase;
        gap: 36px;
 
+       p {
+            @include respond(tablet) {
+                display: none;
+            }
+       }
+
        button {
-        font-family: $font-sfPro;
-        font-size: $font-size-small;
+        @extend %button;
         color: $color-primary-100;
-        text-transform: uppercase;
         width: 125px;
         height: 46px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         background-color: transparent;
         border: 1px solid $color-primary-80;
-        border-radius: $rounded-full;
-        gap: 8px;
        }
     }
 }
