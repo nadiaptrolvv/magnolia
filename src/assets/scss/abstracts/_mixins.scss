@@ -8,7 +8,8 @@
     url("../../media/fonts/#{$file-name}.woff") format("woff"),
     url("../../media/fonts/#{$file-name}.otf") format("opentype"),
     url("../../media/fonts/#{$file-name}.ttf") format("truetype"),
-    url("../../media/fonts/#{$file-name}.svg?#webfont") format("svg");
+    url("../../media/fonts/#{$file-name}.svg?#webfont") format("svg"),
+    url("../../media/fonts/#{$file-name}.OTF");
     font-weight: $font-weight;
     font-style: $font-style;
   }

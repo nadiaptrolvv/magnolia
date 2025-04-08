@@ -1,14 +1,14 @@
 .section {
     width: 100%;
     background-color: $color-primary-20;
-    border-bottom:  1px solid $color-primary-40;
+    border-bottom: 1px solid $color-primary-40;
 
     &__nav {
-    padding: 28px 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 102px;
+        padding: 28px 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 102px;
     }
 
     &__menu {
@@ -17,39 +17,56 @@
         justify-content: center;
         font-family: $font-sfPro;
         list-style: none;
-        font-size: $font-size-small;
+        font-size: $font-size-xsmall;
+        font-weight: $font-weight-light;
         gap: 36px;
         text-transform: uppercase;
         color: $color-primary-100;
 
         @include respond(tablet) {
-            display: none;   
+            display: none;
         }
     }
 
     &__cta {
-       display: flex;
-       justify-content: center;
-       align-items: center; 
-       font-family: $font-sfPro;
-       font-size: $font-size-small;
-       color: $color-primary-100;
-       text-transform: uppercase;
-       gap: 36px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: $font-sfPro;
+        font-size: $font-size-small;
+        color: $color-primary-100;
+        text-transform: uppercase;
+        gap: 36px;
 
-       p {
+        p {
+            font-family: $font-sfPro;
+            font-weight: $font-weight-light;
+            font-size: $font-size-xsmall;
+
             @include respond(tablet) {
                 display: none;
             }
-       }
+        }
 
-       button {
-        @extend %button;
-        color: $color-primary-100;
-        width: 125px;
-        height: 46px;
-        background-color: transparent;
-        border: 1px solid $color-primary-80;
-       }
+        .login-button {
+            @extend %button;
+            font-size: $font-size-xsmall;
+            font-weight: $font-weight-light;
+            color: $color-primary-100;
+            width: 125px;
+            height: 46px;
+            background-color: transparent;
+            border: 1px solid $color-primary-80;
+            transition: all 0.2s ease-in-out;
+
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.6);
+                //transform: translateY(-1px); //efek naik halus
+            } 
+
+            &:active {
+                transform: scale(0.98);
+            }
+        }
     }
 }

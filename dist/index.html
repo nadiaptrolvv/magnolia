@@ -6,27 +6,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- SEO Meta Tags -->
   <title>Magnolia's - Discover Nature's Hidden Beauty.</title>
-  <meta name="description" content="A brief but compelling description of your website, around 150-160 characters." />
-  <meta name="keywords" content="relevant, keywords, separated, by, commas" />
+  <meta name="description"
+    content="Started the business in 2020, with just little resources but big dreams, we find joy in creating floral arrangement with a simple touch and attention to details." />
+  <meta name="keywords" content="Magnolia, platform bisnis, web development" />
   <meta name="author" content="Nadia" />
   <meta name="robots" content="index, follow" />
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Magnolia's - Discover Nature's Hidden Beauty." />
-  <meta property="og:description" content="A brief but compelling description of your website." />
-  <meta property="og:image" content="https://example.com/image.jpg" />
-  <meta property="og:url" content="https://example.com" />
-  <meta property="og:site_name" content="Your Website Name" />
+  <meta property="og:description"
+    content="Started the business in 2020, with just little resources but big dreams, we find joy in creating floral arrangement with a simple touch and attention to details." />
+  <meta property="og:image"
+    content="https://github.com/nadiaptrolvv/magnolia/blob/main/src/assets/media/images/image%207%20(1).png" />
+  <meta property="og:url" content="https://magnolia.com" />
+  <meta property="og:site_name" content="Magnolia" />
   <meta property="og:locale" content="en_US" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Magnolia's - Discover Nature's Hidden Beauty." />
-  <meta name="twitter:description" content="A brief but compelling description of your website." />
-  <meta name="twitter:image" content="https://example.com/image.jpg" />
-  <meta name="twitter:site" content="@YourTwitterHandle" />
-  <meta name="twitter:creator" content="@YourTwitterHandle" />
+  <meta name="twitter:description"
+    content="Started the business in 2020, with just little resources but big dreams, we find joy in creating floral arrangement with a simple touch and attention to details." />
+  <meta name="twitter:image" content="https://github.com/nadiaptrolvv/magnolia/tree/main/src/assets/media/images" />
+  <meta name="twitter:site" content="@magnolia_official" />
+  <meta name="twitter:creator" content="@nadiaptrolvv" />
 
   <!-- Favicon & Apple Icons -->
   <link rel="icon" href="/favicon.ico" type="image/x-icon" />
@@ -66,7 +70,9 @@
             <img src="assets/media/images/magnolia’s.svg" alt="" class="section__brand">
             <div class="section__cta">
               <p>carts (0)</p>
-              <button>login <i class="bi bi-arrow-right"></i></button>
+              <a href="/login" class="login-button">
+                login <span class="arrow">→</span>
+              </a>
             </div>
           </div>
         </div>
@@ -82,10 +88,13 @@
                 <h1 class="hero__text--title">discover nature's hidden beauty.</h1>
                 <p class="hero__text--paragraph">Started the business in 2020, with just little resources but big
                   dreams, we find joy in creating floral arrangement with a simple touch and attention to details</p>
-                <button class="hero__text--cta">explore collections <i class="bi bi-arrow-right"></i></button>
+                <a href="/login" class="explore-button">
+                  explore collections <span class="arrow">→</span>
+                </a>
+                <!--<button class="hero__text--cta">explore collections <i class="bi bi-arrow-right"></i></button>-->
               </div>
               <div class="hero__image">
-                <img src="assets/media/images/image 7.png" class="hero__image--img" alt="">
+                <img src="assets/media/images/image 7 (1).png" class="hero__image--img" alt="">
                 <p>Chrysanthemum</p>
                 <span>$24.00</span>
                 <img src="assets/media/images/Frame 4.png" alt="" class="hero__image--icon">
@@ -133,7 +142,10 @@
                   big dreams, we find joy in creating floral arrangement with a simple touch and attention to details.
                   With our improved products and services. Our personalized bouquet is perfect for any occasions;
                   celebrations, weddings, corporate events and many more.</p>
-                <button class="introduction__text--cta">get to know us <i class="bi bi-arrow-right"></i></button>
+                <a href="/login" class="get-button">
+                  get to know us <span class="arrow">→</span>
+                </a>
+                <!--<button class="introduction__text--cta">get to know us <i class="bi bi-arrow-right"></i></button>-->
               </div>
             </div>
 
@@ -146,97 +158,99 @@
                     in state-of-the-art florist to provide the highest quality of
                     flower to our customers.</p>
                   <div class="collection__text--paragraph--icons">
-                    <i class="bi bi-arrow-left"></i>
-                    <i class="bi bi-arrow-right"></i>
+                    <i class="collection__prev-btn bi bi-arrow-left"></i>
+                    <i class="collection__next-btn bi bi-arrow-right"></i>
                   </div>
                 </div>
               </div>
-              <div class="collection__list">
-                <div class="collection__list--item">
-                  <img src="assets/media/images/image 7 (2).png" alt="" class="collection__list--item--image">
-                  <div class="collection__list--item--text">
-                    <div>
-                      <p>hortensia</p>
-                      <span>$14.99</span>
+              <div class="swiper collection__scroller">
+                <div class=" swiper-wrapper collection__list">
+                  <div class="swiper-slide collection__list--item">
+                    <img src="assets/media/images/image 7 (2).png" alt="" class="collection__list--item--image">
+                    <div class="collection__list--item--text">
+                      <div>
+                        <p>hortensia</p>
+                        <span>$14.99</span>
+                      </div>
+                      <i class="bi bi-arrow-right"></i>
                     </div>
-                    <i class="bi bi-arrow-right"></i>
                   </div>
-                </div>
 
-                <div class="collection__list--item">
-                  <img src="assets/media/images/image 7 (1).png" alt="" class="collection__list--item--image">
-                  <div class="collection__list--item--text">
-                    <div>
-                      <p>Gypsophila</p>
-                      <span>$21.00</span>
+                  <div class="swiper-slide collection__list--item">
+                    <img src="assets/media/images/image 7 (1).png" alt="" class="collection__list--item--image">
+                    <div class="collection__list--item--text">
+                      <div>
+                        <p>Gypsophila</p>
+                        <span>$21.00</span>
+                      </div>
+                      <i class="bi bi-arrow-right"></i>
                     </div>
-                    <i class="bi bi-arrow-right"></i>
                   </div>
-                </div>
 
-                <div class="collection__list--item">
-                  <img src="assets/media/images/image 7 (3).png" alt="" class="collection__list--item--image">
-                  <div class="collection__list--item--text">
-                    <div>
-                      <p>Delphine</p>
-                      <span>$43.00</span>
+                  <div class="swiper-slide collection__list--item">
+                    <img src="assets/media/images/image 7 (3).png" alt="" class="collection__list--item--image">
+                    <div class="collection__list--item--text">
+                      <div>
+                        <p>Delphine</p>
+                        <span>$43.00</span>
+                      </div>
+                      <i class="bi bi-arrow-right"></i>
                     </div>
-                    <i class="bi bi-arrow-right"></i>
                   </div>
-                </div>
 
-                <div class="collection__list--item">
-                  <img src="assets/media/images/image 7 (4).png" alt="" class="collection__list--item--image">
-                  <div class="collection__list--item--text">
-                    <div>
-                      <p>Red Rose</p>
-                      <span>$16.00</span>
+                  <div class="swiper-slide collection__list--item">
+                    <img src="assets/media/images/image 7 (4).png" alt="" class="collection__list--item--image">
+                    <div class="collection__list--item--text">
+                      <div>
+                        <p>Red Rose</p>
+                        <span>$16.00</span>
+                      </div>
+                      <i class="bi bi-arrow-right"></i>
                     </div>
-                    <i class="bi bi-arrow-right"></i>
                   </div>
-                </div>
 
-                <div class="collection__list--item">
-                  <img src="assets/media/images/image 7 (6).png" alt="" class="collection__list--item--image">
-                  <div class="collection__list--item--text">
-                    <div>
-                      <p>Sunflower</p>
-                      <span>$11.99</span>
+                  <div class="swiper-slide collection__list--item">
+                    <img src="assets/media/images/image 7 (6).png" alt="" class="collection__list--item--image">
+                    <div class="collection__list--item--text">
+                      <div>
+                        <p>Sunflower</p>
+                        <span>$11.99</span>
+                      </div>
+                      <i class="bi bi-arrow-right"></i>
                     </div>
-                    <i class="bi bi-arrow-right"></i>
                   </div>
-                </div>
 
-                <div class="collection__list--item">
-                  <img src="assets/media/images/image 7 (5).png" alt="" class="collection__list--item--image">
-                  <div class="collection__list--item--text">
-                    <div>
-                      <p>Carnations</p>
-                      <span>$12.99</span>
+                  <div class="swiper-slide collection__list--item">
+                    <img src="assets/media/images/image 7 (5).png" alt="" class="collection__list--item--image">
+                    <div class="collection__list--item--text">
+                      <div>
+                        <p>Carnations</p>
+                        <span>$12.99</span>
+                      </div>
+                      <i class="bi bi-arrow-right"></i>
                     </div>
-                    <i class="bi bi-arrow-right"></i>
                   </div>
-                </div>
 
-                <div class="collection__list--item">
-                  <img src="assets/media/images/image 7 (8).png" alt="" class="collection__list--item--image">
-                  <div class="collection__list--item--text">
-                    <div>
-                      <p>Chrysanthemum</p>
-                      <span>$24.00</span>
+                  <div class="swiper-slide collection__list--item">
+                    <img src="assets/media/images/image 7 (8).png" alt="" class="collection__list--item--image">
+                    <div class="collection__list--item--text">
+                      <div>
+                        <p>Chrysanthemum</p>
+                        <span>$24.00</span>
+                      </div>
+                      <i class="bi bi-arrow-right"></i>
                     </div>
-                    <i class="bi bi-arrow-right"></i>
                   </div>
-                </div>
 
-                <div class="collection__list--item">
-                  <img src="assets/media/images/image 7 (7).png" alt="" class="collection__list--item--image">
-                  <div class="collection__list--item--text">
-                    <div>
-                      <p>White Rose</p>
-                      <span>$13.40</span>
+                  <div class="swiper-slide collection__list--item">
+                    <img src="assets/media/images/image 7 (7).png" alt="" class="collection__list--item--image">
+                    <div class="collection__list--item--text">
+                      <div>
+                        <p>White Rose</p>
+                        <span>$13.40</span>
+                      </div>
+                      <i class="bi bi-arrow-right"></i>
                     </div>
-                    <i class="bi bi-arrow-right"></i>
                   </div>
                 </div>
               </div>
@@ -247,75 +261,80 @@
                 <h2 class="testimonials__text--title">what our customer say</h2>
                 <div class="testimonials__text--paragraph">
                   <p>Our gardens feature best quality flowers and plants that provided directly from the garden.
-                    We continuously maintain in state-of-the-art florist to provide the highest quality of flower to our
+                    We continuously maintain in state-of-the-art florist to provide the highest quality of flower to
+                    our
                     customers.</p>
                   <div class="testimonials__text--paragraph--icons">
-                    <i class="bi bi-arrow-left"></i>
-                    <i class="bi bi-arrow-right"></i>
+                    <i class="testimonials__prev-btn bi bi-arrow-left"></i>
+                    <i class="testimonials__next-btn bi bi-arrow-right"></i>
                   </div>
                 </div>
               </div>
-              <div class="testimonials__list">
-                <div class="testimonials__list--cust">
-                  <i class="bi bi-quote"></i>
-                  <div class="testimonials__list--cust--text">
-                    <p>Perfect and Recommended</p>
-                    <span>The flowers were absolutely beautiful and lasted a good amount of time. My daughter was
-                      delighted with them.</span>
-                  </div>
-                  <div class="testimonials__list--cust--user">
-                    <img src="assets/media/images/image 76.png" alt="">
-                    <div class="testimonials__list--cust--user--text">
-                      <p>Hannah Downey</p>
-                      <span>Entrepreneur</span>
+              <div class="swiper testimonials__scroller">
+                <div class="swiper-wrapper testimonials__list">
+                  <div class="swiper-slide testimonials__list--cust">
+                    <i class="bi bi-quote"></i>
+                    <div class="testimonials__list--cust--text">
+                      <p>Perfect and Recommended</p>
+                      <span>The flowers were absolutely beautiful and lasted a good amount of time. My daughter was
+                        delighted with them.</span>
+                    </div>
+                    <div class="testimonials__list--cust--user">
+                      <img src="assets/media/images/image 76.png" alt="">
+                      <div class="testimonials__list--cust--user--text">
+                        <p>Hannah Downey</p>
+                        <span>Entrepreneur</span>
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                <div class="testimonials__list--cust">
-                  <i class="bi bi-quote"></i>
-                  <div class="testimonials__list--cust--text">
-                    <p>I’ve Found Best Florist in Town!</p>
-                    <span>The service was excellent - thanks to same day delivery, they deliver a birthday plant in time
-                      for my daughter's birthday!</span>
-                  </div>
-                  <div class="testimonials__list--cust--user">
-                    <img src="assets/media/images/image 76 (1).png" alt="">
-                    <div class="testimonials__list--cust--user--text">
-                      <p>Bessie Cooper</p>
-                      <span>Product Owner</span>
+                  <div class="swiper-slide testimonials__list--cust">
+                    <i class="bi bi-quote"></i>
+                    <div class="testimonials__list--cust--text">
+                      <p>I’ve Found Best Florist in Town!</p>
+                      <span>The service was excellent - thanks to same day delivery, they deliver a birthday plant in
+                        time
+                        for my daughter's birthday!</span>
+                    </div>
+                    <div class="testimonials__list--cust--user">
+                      <img src="assets/media/images/image 76 (1).png" alt="">
+                      <div class="testimonials__list--cust--user--text">
+                        <p>Bessie Cooper</p>
+                        <span>Product Owner</span>
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                <div class="testimonials__list--cust">
-                  <i class="bi bi-quote"></i>
-                  <div class="testimonials__list--cust--text">
-                    <p>What a Superb Services!</p>
-                    <span>This was my second time turning to Magnolias for a flower arrangement and delivery and the end
-                      result was stunning.</span>
-                  </div>
-                  <div class="testimonials__list--cust--user">
-                    <img src="assets/media/images/image 76 (2).png" alt="">
-                    <div class="testimonials__list--cust--user--text">
-                      <p>Darlene Robertson</p>
-                      <span>Business Development</span>
+                  <div class="swiper-slide testimonials__list--cust">
+                    <i class="bi bi-quote"></i>
+                    <div class="testimonials__list--cust--text">
+                      <p>What a Superb Services!</p>
+                      <span>This was my second time turning to Magnolias for a flower arrangement and delivery and the
+                        end
+                        result was stunning.</span>
+                    </div>
+                    <div class="testimonials__list--cust--user">
+                      <img src="assets/media/images/image 76 (2).png" alt="">
+                      <div class="testimonials__list--cust--user--text">
+                        <p>Darlene Robertson</p>
+                        <span>Business Development</span>
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                <div class="testimonials__list--cust">
-                  <i class="bi bi-quote"></i>
-                  <div class="testimonials__list--cust--text">
-                    <p>Awesome Florist Agency</p>
-                    <span>We want to thank you so much for the fantastic job you did on our wedding flowers on our
-                      wedding day.</span>
-                  </div>
-                  <div class="testimonials__list--cust--user">
-                    <img src="assets/media/images/image 76 (3).png" alt="">
-                    <div class="testimonials__list--cust--user--text">
-                      <p>Kristin Watson</p>
-                      <span>Hairdresser</span>
+                  <div class="swiper-slide testimonials__list--cust">
+                    <i class="bi bi-quote"></i>
+                    <div class="testimonials__list--cust--text">
+                      <p>Awesome Florist Agency</p>
+                      <span>We want to thank you so much for the fantastic job you did on our wedding flowers on our
+                        wedding day.</span>
+                    </div>
+                    <div class="testimonials__list--cust--user">
+                      <img src="assets/media/images/image 76 (3).png" alt="">
+                      <div class="testimonials__list--cust--user--text">
+                        <p>Kristin Watson</p>
+                        <span>Hairdresser</span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -341,33 +360,51 @@
                     have received positive feedback and have helped us establish a
                     strong reputation in the global market.</p>
                   <div class="stories__text--paragraph--icons">
-                    <i class="bi bi-arrow-left"></i>
-                    <i class="bi bi-arrow-right"></i>
+                    <i class="stories__prev-btn bi bi-arrow-left"></i>
+                    <i class="stories__next-btn bi bi-arrow-right"></i>
                   </div>
                 </div>
               </div>
-              <div class="stories__list">
-                <div class="stories__list--item">
-                  <p class="stories__list--item--categories">journal</p>
-                  <h5 class="stories__list--item--title">arranging your own flowers</h5>
-                  <img src="assets/media/images/Rectangle 32 (2).png" alt="" class="stories__list--item--image">
-                </div>
-                <div class="stories__list--item">
-                  <p class="stories__list--item--categories">journal</p>
-                  <h5 class="stories__list--item--title">the story behind our flower selection</h5>
-                  <img src="assets/media/images/Rectangle 32 (1).png" alt="" class="stories__list--item--image">
-                </div>
-                <div class="stories__list--item">
-                  <p class="stories__list--item--categories">journal</p>
-                  <h5 class="stories__list--item--title">step to maintain your outdoor’s plant</h5>
-                  <img src="assets/media/images/Rectangle 32.png" alt="" class="stories__list--item--image">
+              <div class="swiper stories__scroller">
+                <div class="swiper-wrapper stories__list">
+                  <div class="swiper-slide stories__list--item">
+                    <p class="stories__list--item--categories">journal</p>
+                    <h5 class="stories__list--item--title">arranging your own flowers</h5>
+                    <img src="assets/media/images/Rectangle 32 (2).png" alt="" class="stories__list--item--image">
+                  </div>
+                  <div class="swiper-slide stories__list--item">
+                    <p class="stories__list--item--categories">journal</p>
+                    <h5 class="stories__list--item--title">the story behind our flower selection</h5>
+                    <img src="assets/media/images/Rectangle 32 (1).png" alt="" class="stories__list--item--image">
+                  </div>
+                  <div class="swiper-slide stories__list--item">
+                    <p class="stories__list--item--categories">journal</p>
+                    <h5 class="stories__list--item--title">step to maintain your outdoor’s plant</h5>
+                    <img src="assets/media/images/Rectangle 32.png" alt="" class="stories__list--item--image">
+                  </div>
+                  <div class="swiper-slide stories__list--item">
+                    <p class="stories__list--item--categories">journal</p>
+                    <h5 class="stories__list--item--title">arranging your own flowers</h5>
+                    <img src="assets/media/images/Rectangle 32 (2).png" alt="" class="stories__list--item--image">
+                  </div>
+                  <div class="swiper-slide stories__list--item">
+                    <p class="stories__list--item--categories">journal</p>
+                    <h5 class="stories__list--item--title">the story behind our flower selection</h5>
+                    <img src="assets/media/images/Rectangle 32 (1).png" alt="" class="stories__list--item--image">
+                  </div>
+                  <div class="swiper-slide stories__list--item">
+                    <p class="stories__list--item--categories">journal</p>
+                    <h5 class="stories__list--item--title">step to maintain your outdoor’s plant</h5>
+                    <img src="assets/media/images/Rectangle 32.png" alt="" class="stories__list--item--image">
+                  </div>
                 </div>
               </div>
             </div>
 
             <div class="git">
               <div class="git__text">
-                <h3 class="git__text--title">never missed out, stay updated and get a truly form of nature’s beauty</h3>
+                <h3 class="git__text--title">never missed out, stay updated and get a truly form of nature’s beauty
+                </h3>
                 <div class="git__text--paragraph">
                   <p>Subscribe to our monthly email to get interesting promotions related to products and updates from
                     our daily garden and various tips related to the plants in it</p>
@@ -375,7 +412,6 @@
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </section>
@@ -459,6 +495,40 @@
   </footer>
   </div>
 
+  <!-- Swiper -->
+  <script type="module">
+    import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+    new Swiper('.collection__scroller', {
+      speed: 400,
+      spaceBetween: 36,
+      slidesPerView: 4,
+      navigation: {
+        nextEl: ".collection__next-btn",
+        prevEl: ".collection__prev-btn"
+      }
+    })
+
+    new Swiper('.testimonials__scroller', {
+      speed: 400,
+      spaceBetween: 36,
+      slidesPerView: 3,
+      navigation: {
+        nextEl: ".testimonials__next-btn",
+        prevEl: ".testimonials__prev-btn"
+      }
+    })
+
+    new Swiper('.stories__scroller', {
+      speed: 400,
+      spaceBetween: 36,
+      slidesPerView: 3,
+      navigation: {
+        nextEl: ".stories__next-btn",
+        prevEl: ".stories__prev-btn"
+      }
+    })
+  </script>
+  <!-- End Swiper -->
   <!-- Start::Global Bundle Scripts (used by all pages) -->
   <script src="assets/js/scripts.bundle.js"></script>
   <!-- End::Global Bundle Scripts -->
