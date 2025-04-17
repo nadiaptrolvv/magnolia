@@ -359,12 +359,13 @@ h6,
 }
 
 .hero {
-  height: 100vh;
+  height: 604px;
   width: 100%;
   background-image: url("../../media/images/daisies 1.png");
   background-color: #D9DED2;
-  background-size: 770px;
-  background-position: bottom;
+  background-size: 690px;
+  background-position-x: center;
+  background-position-y: -100%;
   background-repeat: no-repeat;
   padding-top: 48px;
   position: relative;
@@ -497,8 +498,9 @@ h6,
   flex-direction: column;
   justify-content: center;
   align-items: start;
+  gap: 4px;
 }
-.quality__item--text h6 {
+.quality__item--text h3 {
   font-size: 24px;
   font-weight: 300;
   font-family: "Ivy Mode";

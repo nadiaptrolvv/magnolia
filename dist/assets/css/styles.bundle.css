@@ -331,6 +331,12 @@ h6,
   text-transform: uppercase;
   color: #465039;
 }
+.section__menu--item {
+  transition: opacity 0.4s;
+}
+.section__menu--item:hover {
+  opacity: 0.5;
+}
 @media (max-width: 991px) {
   .section__menu {
     display: none;

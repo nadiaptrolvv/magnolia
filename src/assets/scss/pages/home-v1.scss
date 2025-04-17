@@ -6,12 +6,13 @@
 
 // Add your style here
 .hero {
-    height: 100vh;
+    height: 604px;
     width: 100%;
     background-image: url('../../../assets/media/images/daisies\ 1.png');
     background-color: $color-primary-20;
-    background-size: 770px;
-    background-position: bottom;
+    background-size: 690px;
+    background-position-x: center;
+    background-position-y: -100%;
     background-repeat: no-repeat;
     padding-top: 48px;
     position: relative;
@@ -156,8 +157,9 @@
             flex-direction: column;
             justify-content: center;
             align-items: start;
+            gap: 4px;
 
-            h6 {
+            h3 {
                 font-size: $font-size-h6;
                 font-weight: $font-weight-light;
                 font-family: $font-ivyMode;

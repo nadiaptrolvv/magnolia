@@ -23,6 +23,14 @@
         text-transform: uppercase;
         color: $color-primary-100;
 
+        &--item {
+            transition: opacity .4s;
+
+            &:hover {
+                opacity: .5;
+            }
+        }
+
         @include respond(tablet) {
             display: none;
         }
