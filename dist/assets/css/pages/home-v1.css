@@ -180,6 +180,7 @@ h6,
   border-top: 1px solid #ADB4A4;
 }
 .stories__text > div p, .testimonials__text > div p, .collection__text > div p {
+  letter-spacing: 1.2px;
   font-size: 18px;
   font-weight: 300;
   font-family: "SF Pro";
@@ -200,11 +201,16 @@ h6,
 .stories__text > div > div i, .testimonials__text > div > div i, .collection__text > div > div i {
   width: 52px;
   height: 52px;
+  cursor: pointer;
   border-radius: 50%;
   color: #5E6653;
   line-height: 52px;
   text-align: center;
   border: 1px solid #5E6653;
+  transition: background 0.4s;
+}
+.stories__text > div > div i:hover, .testimonials__text > div > div i:hover, .collection__text > div > div i:hover {
+  background-color: #ADB4A4;
 }
 
 body * {
@@ -373,6 +379,8 @@ h6,
 @media (max-width: 991px) {
   .hero {
     padding: 50px 0;
+    height: 75vh;
+    background-position-y: bottom;
   }
 }
 .hero__text {
@@ -393,8 +401,14 @@ h6,
   font-family: "Ivy Mode";
   font-weight: 300;
 }
+@media (max-width: 991px) {
+  .hero__text--title {
+    font-size: 64px;
+  }
+}
 .hero__text--paragraph {
   width: 513px;
+  letter-spacing: 1.2px;
   font-family: "SF Pro";
   color: #5E6653;
   font-weight: 300;
@@ -465,6 +479,7 @@ h6,
   height: 144px;
   padding: 40px 80px;
   box-shadow: 0 -100px 10px rgba(0, 0, 0, 0.2);
+  flex-wrap: wrap;
 }
 @media (max-width: 991px) {
   .quality {
@@ -472,6 +487,7 @@ h6,
     scrollbar-width: none;
     justify-content: start;
     gap: 36px;
+    flex-wrap: nowrap;
   }
 }
 .quality__item {
@@ -550,6 +566,7 @@ h6,
   color: #465039;
 }
 .introduction__text--paragraph {
+  letter-spacing: 1.2px;
   font-family: "SF Pro";
   color: #5E6653;
   font-weight: 300;
@@ -626,11 +643,13 @@ h6,
   justify-content: start;
   width: -moz-fit-content;
   width: fit-content;
+  gap: 0;
 }
 @media (max-width: 991px) {
   .collection__list {
     width: 100%;
     flex-wrap: wrap;
+    gap: 36px;
     justify-content: center;
   }
 }
@@ -645,7 +664,11 @@ h6,
   background-color: white;
   padding: 16px 16px 20px 16px;
 }
+.collection__list--item:has(.bi-arrow-right) ~ .collection__list--item--image {
+  transform: scale(1.2);
+}
 .collection__list--item--image {
+  transition: transform 0.4s;
   width: 100%;
   margin-bottom: 20px;
 }
@@ -662,6 +685,7 @@ h6,
   line-height: 34px;
   color: #5E6653;
   border-radius: 50%;
+  cursor: pointer;
 }
 .collection__list--item--text p {
   font-size: 20px;
@@ -691,6 +715,7 @@ h6,
 }
 .collection__text--paragraph {
   width: 100%;
+  letter-spacing: 1.2px;
   padding-top: 36px;
   display: flex;
   justify-content: space-between;
@@ -740,6 +765,12 @@ h6,
   justify-content: center;
   width: -moz-fit-content;
   width: fit-content;
+  gap: 0;
+}
+@media (max-width: 991px) {
+  .testimonials__list {
+    gap: 36px;
+  }
 }
 .testimonials__list--cust:nth-child(even) {
   transform: rotate(-1deg);
@@ -848,11 +879,12 @@ h6,
   align-items: center;
   width: -moz-fit-content;
   width: fit-content;
-  gap: 36px;
+  gap: 0;
 }
 @media (max-width: 991px) {
   .stories__list {
     flex-direction: column;
+    gap: 36px;
   }
 }
 .stories__list--item {
@@ -882,6 +914,7 @@ h6,
   text-transform: uppercase;
   margin-bottom: 24px;
   font-family: "Ivy Mode";
+  font-size: 24px;
   color: #465039;
   font-weight: 400;
 }
@@ -905,7 +938,7 @@ h6,
 .git {
   padding: 76px 80px;
   background: linear-gradient(rgba(94, 102, 83, 0.97), rgba(94, 102, 83, 0.97)), url("../../media/images/Testimonial (1).png") no-repeat center/contain;
-  background-size: 100% auto;
+  background-size: cover;
 }
 @media (max-width: 991px) {
   .git {
@@ -940,6 +973,7 @@ h6,
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  letter-spacing: 1.2px;
 }
 @media (max-width: 991px) {
   .git__text--paragraph {

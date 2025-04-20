@@ -4,6 +4,7 @@
     align-items: start;
     flex-direction: column;
     background-color: $color-primary-10;
+    box-sizing: border-box;
 
     &__info {
         @include respond(tablet) {
@@ -15,7 +16,7 @@
         padding: 76px 80px;
         display: flex;
         align-items: start;
-        justify-content: start;
+        justify-content: flex-start;
         width: 100%;
         gap: 86px;
 
@@ -32,6 +33,7 @@
             align-items: start;
             padding-left: 86px;
             width: 100%;
+            gap: 12px;
             border-left: 1px solid $color-primary-40;
 
             &--list {
@@ -77,14 +79,17 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: start;
-                width: fit-content;
+                width: 48%;
 
                 p {
-                    width: 399px;
+                    width: 100%;
+                    letter-spacing: $letter-spacing;
                     font-size: $font-size-medium;
                     color: $color-primary-80;
                     font-family: $font-sfPro;
                     font-weight: $font-weight-light;
+                    text-align: justify;
+                    text-wrap: wrap;
                 }
                 border: none;
             }

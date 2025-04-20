@@ -19,6 +19,8 @@
 
     @include respond(tablet) {
         padding: 50px 0;
+        height: 75vh;
+        background-position-y: bottom;
     }
 
     &__text {
@@ -37,10 +39,14 @@
             text-transform: uppercase;
             font-family: $font-ivyMode;
             font-weight: $font-weight-light;
+            @include respond(tablet) {
+                font-size: 64px;
+            }
         }
 
         &--paragraph {
             width: 513px;
+            letter-spacing: 1.2px;
             font-family: $font-sfPro;
             color: $color-primary-80;
             font-weight: $font-weight-light;
@@ -125,12 +131,14 @@
     height: 144px;
     padding: 40px 80px;
     box-shadow: 0 -100px 10px rgba($color: #000000, $alpha: .2);
+    flex-wrap: wrap;
 
     @include respond(tablet) {
         overflow-x: scroll;
         scrollbar-width: none;
         justify-content: start;
         gap: 36px;
+        flex-wrap: nowrap;
     }
 
     &__item {
@@ -213,6 +221,7 @@
         }
 
         &--paragraph {
+            letter-spacing: $letter-spacing;
             font-family: $font-sfPro;
             color: $color-primary-80;
             font-weight: $font-weight-light;
@@ -300,11 +309,12 @@
         align-items: center;
         justify-content: start;
         width: fit-content;
-        //gap: 36px;
+        gap: 0;
 
         @include respond(tablet) {
             width: 100%;
             flex-wrap: wrap;
+            gap: 36px;
             justify-content: center;
         }
 
@@ -321,7 +331,12 @@
             background-color: $white;
             padding: 16px 16px 20px 16px;
 
+            &:has(.bi-arrow-right) ~ .collection__list--item--image {
+                transform: scale(1.2);
+            }
+
             &--image {
+                transition: transform .4s;
                 width: 100%;
                 margin-bottom: 20px;
             }
@@ -339,7 +354,7 @@
                     line-height: 34px;
                     color: $color-primary-80;
                     border-radius: 50%;
-
+                    cursor: pointer;
                 }
 
                 p {
@@ -376,6 +391,7 @@
 
         &--paragraph {
             width: 100%;
+            letter-spacing: $letter-spacing;
             padding-top: 36px;
             display: flex;
             justify-content: space-between;
@@ -436,7 +452,11 @@
         display: flex;
         justify-content: center;
         width: fit-content;
-        //gap: 36px;
+        gap: 0;
+        
+        @include respond(tablet) {
+            gap: 36px;
+        }
 
         &--cust:nth-child(even) {
             transform: rotate(-1deg);
@@ -559,10 +579,11 @@
         justify-content: start;
         align-items: center;
         width: fit-content;
-        gap: 36px;
-
+        gap: 0;
+        
         @include respond(tablet) {
             flex-direction: column;
+            gap: 36px;
         }
 
         &--item {
@@ -592,6 +613,7 @@
                 text-transform: uppercase;
                 margin-bottom: 24px;
                 font-family: $font-ivyMode;
+                font-size: $font-size-h6;
                 color: $color-primary-100;
                 font-weight: $font-weight-regular;
             }
@@ -623,7 +645,7 @@
     padding: 76px 80px;
     background: linear-gradient(rgba(94, 102, 83, 0.97), rgba(94, 102, 83, 0.97)),
     url('../../../assets/media/images/Testimonial (1).png') no-repeat center/contain;
-    background-size: 100% auto;
+    background-size: cover;
 
     &__text {
         display: flex;
@@ -658,6 +680,7 @@
             align-items: center;
             justify-content: space-between;
             width: 100%;
+            letter-spacing: $letter-spacing;
 
             p {
                 font-family: $font-sfPro;
